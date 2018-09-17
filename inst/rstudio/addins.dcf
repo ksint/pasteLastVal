@@ -1,0 +1,4 @@
+Name: Paste Last Value
+Description: Pastes the last value as a comment.
+Binding: pasteLastVal
+Interactive: false
