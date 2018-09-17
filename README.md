@@ -8,7 +8,7 @@ devtools::install_github("ksint/pasteLastVal")
 Add keyboard shortcut
 1) Go to `Tools` -> `Modify Keyboard Shortcuts...`
 2) Type `addin` in the search box
-3) Assign a shortcut for PasteLastVal. I use `Ctrl + Shift + V`
+3) Assign a shortcut for `Paste Last Value`. I use `Ctrl + Shift + V`
 
 ## Usage
 1) Access the pasteLastVal function by `Addins` -> `Paste Last Value` or
