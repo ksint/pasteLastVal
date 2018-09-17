@@ -2,10 +2,6 @@
 # as a comment in the active Rstudio editor
 
 pasteLastVal <- function() {
-  rstudioapi::setCursorPosition(
-    rstudioapi::document_position(rstudioapi::getSourceEditorContext()$selection[[1]][["range"]][["end"]][1] + 1, 1),
-    id = rstudioapi::getSourceEditorContext()$id)
-
   outputstr = capture.output(
     tryCatch(
       print(.Last.value),
