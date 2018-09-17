@@ -14,4 +14,10 @@ Add keyboard shortcut
 1) Access the pasteLastVal function by `Addins` -> `Paste Last Value` or
 2) Use the user-assigned keyboard shortcut (see above).
 
+## Screenshots
+![Simple Example](simple_example.gif)
+
+![Example from lm documentation](lm_example.gif)
+
+
 
