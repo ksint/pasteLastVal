@@ -1,5 +1,6 @@
 # Paste the .Last.value as a comment in the next line of code
 # as a comment in the active Rstudio editor
+# by Kyaw Sint (Joe), Thanks to the RStudio team for addins and rstudioapi
 
 pasteLastVal <- function() {
   outputstr = capture.output(
