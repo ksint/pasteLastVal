@@ -11,9 +11,7 @@ Add keyboard shortcut
 3) Assign a shortcut for PasteLastVal. I use `Ctrl + Shift + V`
 
 ## Usage
-```
 1) Access the pasteLastVal function by `Addins` -> `Paste Last Value` or
 2) Use the user-assigned keyboard shortcut (see above).
 
-```
 
