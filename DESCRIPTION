@@ -5,6 +5,10 @@ Version: 0.1.0
 Author: Kyaw Sint (Joe)
 Maintainer: Kyaw Sint (Joe) <ksint2@gmail.com>
 Description: RStudio addin to paste the .Last.value as a comment in the next line of code as a comment in the active Rstudio editor
+Depends: 
+    R (>= 3.3.0)
+Imports: 
+    stringr
 Encoding: UTF-8
 LazyData: true
 License: MIT + file LICENSE
