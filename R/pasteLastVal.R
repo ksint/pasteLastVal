@@ -1,6 +1,7 @@
 # Paste the .Last.value as a comment in the next line of code
 # as a comment in the active Rstudio editor
 # by Kyaw Sint (Joe), Thanks to the RStudio team for addins and rstudioapi
+# add functionality to handle bash encoded output, like tibble
 
 pasteLastVal <- function() {
   outputstr = capture.output(
@@ -15,6 +16,8 @@ pasteLastVal <- function() {
   outputstr = gsub("\n", "\n# ", outputstr)
   outputstr = paste(outputstr, "\n")
 
+  outputstr = str_replace_all(outputstr,regex("(\\033.*?m)"),"")
+  
   rstudioapi::insertText(text=outputstr, id = rstudioapi::getSourceEditorContext()$id)
 
   rstudioapi::setCursorPosition(
