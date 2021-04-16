@@ -15,6 +15,8 @@ pasteLastVal <- function() {
   outputstr = gsub("\n", "\n# ", outputstr)
   outputstr = paste(outputstr, "\n")
 
+  outputstr = str_replace_all(outputstr,regex("(\\033.*?m)"),"")
+  
   rstudioapi::insertText(text=outputstr, id = rstudioapi::getSourceEditorContext()$id)
 
   rstudioapi::setCursorPosition(
