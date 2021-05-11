@@ -11,7 +11,10 @@
 #'
 #' Pastes the last value as a comment.
 #'
-#' @import rstudioapi stringr
+#' @importFrom rstudioapi insertText getSourceEditorContext setCursorPosition
+#'     document_position
+#' @importFrom stringr str_replace_all regex
+#' @importFrom utils capture.output
 #' @export
 pasteLastVal <- function() {
   outputstr <- utils::capture.output(
