@@ -33,14 +33,16 @@ pasteLastVal <- function() {
                                         stringr::regex("(\\033.*?m)"),
                                         "")
 
+  se_context <- rstudioapi::getSourceEditorContext()
+  se_id <- se_context$id
+
   rstudioapi::insertText(text = outputstr,
-                         id = rstudioapi::getSourceEditorContext()$id)
-
-  ed_sel <- rstudioapi::getSourceEditorContext()$selection
-  ed_row <- ed_sel[[1]][["range"]][["end"]][1]
-
+                         id = se_id)
   rstudioapi::setCursorPosition(
-    rstudioapi::document_position(ed_row, 1),
-    id = rstudioapi::getSourceEditorContext()$id
+    rstudioapi::document_position(
+      se_context$selection[[1]][["range"]][["end"]][1],
+      1
+    ),
+    id = se_id
   )
 }

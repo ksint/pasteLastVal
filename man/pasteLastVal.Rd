@@ -2,12 +2,10 @@
 % Please edit documentation in R/pasteLastVal.R
 \name{pasteLastVal}
 \alias{pasteLastVal}
-\title{pasteLastVal
-Pastes the last value as a comment.}
+\title{pasteLastVal}
 \usage{
 pasteLastVal()
 }
 \description{
-pasteLastVal
 Pastes the last value as a comment.
 }
